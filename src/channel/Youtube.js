@@ -39,7 +39,7 @@ const Youtube = () => {
       <VideoList />
       
     </Wrapper>
-    <Link to="/myFunction" className='link'>일단</Link>
+    <Link to="/Chating" className='link'>일단</Link>
     </>
   );
 };

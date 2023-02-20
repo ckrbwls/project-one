@@ -1,11 +1,12 @@
 import './App.css';
 import { Route, BrowserRouter, Routes} from 'react-router-dom';
 import Youtube  from './channel/Youtube';
-import myFunction from './channel/myFunction';
+import Login from './channel/Login';
 import Web3 from 'web3';
 import React, { useEffect, useState } from 'react';
 import Logo from "../src/assets/assets_header/Logo.png";
 import Abi from './Abi';
+import Chating from './channel/Chating';
 
 function App () {
   const [web3, setWeb3] = useState('');
@@ -66,8 +67,9 @@ function App () {
        </div>
     
       <Routes>
-          <Route path='' element={<Youtube />} />
-          <Route path='myFunction' element={<myFunction />} />
+          <Route path='/' element={<Login />} />
+          <Route path='/Youtube' element={<Youtube />} />
+          <Route path='/Chating' element={<Chating />} />
       </Routes>
     </BrowserRouter>
     </div>
